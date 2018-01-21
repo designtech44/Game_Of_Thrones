@@ -1,0 +1,72 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  text-align: center;
+  background-image: url("../images/game_of_thrones_logo.jpg");
+}
+
+#wrapper {
+  width: 960px;
+  height: 95%;
+  box-sizing: border-box;
+  margin: 2.5% auto;
+  background-color: rgba(#7af7ff, .13);
+}
+
+#sub-wrapper {
+  position: relative;
+  top: 15%;
+}
+
+button {
+  color: white;
+  display: block;
+  width: 50%;
+  height: 20%;
+  margin: 0 auto;
+  font-size: 42px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+}
+
+button#button.answer-button {
+  color: white;
+}
+
+img {
+  height: 200px;
+}
+
+h1 {
+  padding-top: 2.5%;
+  font-family: Geo, sans-serif;
+  font-size: 6.5em;
+  font-weight: bold;
+  color: black;
+}
+
+h2 {
+  left: 80px;
+  color: white;
+  margin-bottom: 25px;
+  font-size: 35px;
+}
+
+h3 {
+  color: white;
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+#start {
+  left: 80px;
+  margin-top: 10%;
+  background: #c0ceff59;
+}
+
+button:hover {
+  background: #c0ceff59;
+}
