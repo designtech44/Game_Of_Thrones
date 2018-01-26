@@ -178,3 +178,30 @@ $(document).on("click", "#start", function() {
   $("#sub-wrapper").prepend("<h2>Time Remaining: <span id='counter-number'>30</span> Seconds</h2>");
   game.loadQuestion.bind(game)();
 });
+
+// Create an AudioContext instance for this sound
+var audioContext = new (window.AudioContext || window.webkitAudioContext)();
+// Create a buffer for the incoming sound content
+var source = audioContext.createBufferSource();
+// Create the XHR which will grab the audio contents
+var request = new XMLHttpRequest();
+// Set the audio file src here
+request.open('GET', 'gott.mp3', true);
+// Setting the responseType to arraybuffer sets up the audio decoding
+request.responseType = 'arraybuffer';
+request.onload = function() {
+  // Decode the audio once the require is complete
+  audioContext.decodeAudioData(request.response, function(buffer) {
+    source.buffer = buffer;
+    // Connect the audio to source (multiple audio buffers can be connected!)
+    source.connect(audioContext.destination);
+    // Simple setting for the buffer
+    source.loop = true;
+    // Play the sound!
+    source.start(0);
+  }, function(e) {
+    console.log('Audio error! ', e);
+  });
+}
+// Send the request which kicks off
+request.send();
