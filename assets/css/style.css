@@ -1,5 +1,5 @@
 html, body {
-  height: 100%;
+  height: auto;
 }
 
 body {
@@ -38,7 +38,8 @@ button#button.answer-button {
 }
 
 img {
-  padding-bottom: 40px;
+  vertical-align: bottom;
+  padding-bottom: 30px;
   height: 200px;
 }
 
