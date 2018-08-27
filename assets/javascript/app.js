@@ -25,7 +25,7 @@ var questions = [{
   question: "Who is the Bastard King of the North",
   answers: ["Ned Stark", "Little Finger", "Joffrey", "Jon Snow"],
   correctAnswer: "Jon Snow",
-  image: "assets/images/jon-snow.jpg"
+  image: "assets/images/jon-snow1.jpg"
 }, {
   question: "Who does Brienne of Tarth defeat",
   answers: ["Jamie Lannister", "Arya", "The Hound", "Bronn"],
