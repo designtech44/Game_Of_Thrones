@@ -17,7 +17,7 @@ var questions = [{
   correctAnswer: "Ramsay Bolton",
   image: "assets/images/ramsay-bolton.jpg"
 }, {
-  question: "Who is named 'Ah Girl' ",
+  question: "Who is named 'A Girl ' ",
   answers: ["Brienne", "Yara", "Arya Stark", "Melisandre"],
   correctAnswer: "Arya Stark",
   image: "assets/images/arya-stark.jpg"
